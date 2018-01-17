@@ -6,15 +6,16 @@ import time
 
 userName = "anthonyrozon1"
 accessKey = "pyx1xfRY4qqkwpsEqSFM"
-desired_cap = {
-    'device': 'Samsung Galaxy S8',
+desired_caps = {
+    'device': 'Google Pixel',
     'os_version': '7.0',
+    'automationName': 'Appium',
     'app': 'bs://f2fa531a983fdf8e41eafbe701f60af30f7448af'
 }
 
 driver = webdriver.Remote(
     "http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub",
-    desired_cap
+    desired_caps
 )
 
 search_element = WebDriverWait(driver, 30).until(
