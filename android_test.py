@@ -12,7 +12,10 @@ desired_cap = {
     'app': 'bs://f2fa531a983fdf8e41eafbe701f60af30f7448af'
 }
 
-driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
+driver = webdriver.Remote(
+    "http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub",
+    desired_cap
+)
 
 search_element = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Search Wikipedia"))
