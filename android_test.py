@@ -8,7 +8,7 @@ userName = "anthonyrozon1"
 accessKey = "pyx1xfRY4qqkwpsEqSFM"
 desired_caps = {
     'device': 'Google Pixel',
-    'os_version': '7.0',
+    'os_version': '8.0',
     'automationName': 'Appium',
     'app': 'bs://f2fa531a983fdf8e41eafbe701f60af30f7448af'
 }
