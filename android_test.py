@@ -8,7 +8,8 @@ userName = "anthonyrozon1"
 accessKey = "pyx1xfRY4qqkwpsEqSFM"
 desired_cap = {
     'device': 'Samsung Galaxy S8',
-    'os_version': '7.0'
+    'os_version': '7.0',
+    'app': 'bs://f2fa531a983fdf8e41eafbe701f60af30f7448af'
 }
 
 driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
