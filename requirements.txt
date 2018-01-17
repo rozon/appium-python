@@ -1,4 +1,6 @@
 wheel
+requests
 pytest
+pytest-allure-adaptor
 selenium
 Appium-Python-Client
